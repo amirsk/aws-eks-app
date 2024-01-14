@@ -1,0 +1,19 @@
+openapi: 3.0.0
+
+info:
+  title: AWS EKS APP API
+  description: API Spec for AWS EKS APP
+  version: 1.0.0
+
+paths:
+  /hello:
+    get:
+      summary: Returns a simple hello message.
+      description: Returns a simple hello message.
+      responses:
+        '200':
+          description: hello message
+          content:
+            text/plain:
+              schema:
+                type: string

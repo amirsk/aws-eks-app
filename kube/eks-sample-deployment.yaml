@@ -27,7 +27,7 @@ spec:
                       - arm64
       containers:
         - name: hello-world
-          image: { REPLACE_ME }
+          image: ${aws_account_id}.dkr.ecr.${region}.amazonaws.com/hello-repository:latest
           ports:
             - name: http
               containerPort: 8080
